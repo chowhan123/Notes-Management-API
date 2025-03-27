@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to Notes Management API");
 });
 
-// Use routes
+// Use routes process intializing
 app.use("/api/notes", noteRoutes); // Ensures correct API path
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
